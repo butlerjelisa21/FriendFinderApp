@@ -20,8 +20,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // ROUTES
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
-require('./app/routing/api-routes.js')(app);
-require('./app/routing/html-routes.js')(app);
+require('./routing/api-routes.js')(app);
+require('./routing/html-routes.js')(app);
 
 // The below code effectively "starts" our server
 app.listen(PORT, function () {
